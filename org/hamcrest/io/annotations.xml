@@ -1,0 +1,20 @@
+<root>
+    <item name='org.hamcrest.io.FileMatchers CAN_READ'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.hamcrest.io.FileMatchers CAN_WRITE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.hamcrest.io.FileMatchers EXISTS'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.hamcrest.io.FileMatchers IS_DIRECTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.hamcrest.io.FileMatchers org.hamcrest.Matcher&lt;java.io.File&gt; aFileWithAbsolutePath(org.hamcrest.Matcher&lt;java.lang.String&gt;)'>
+        <annotation name='org.jetbrains.annotations.NonBlocking'/>
+    </item>
+    <item name='org.hamcrest.io.FileMatchers org.hamcrest.Matcher&lt;java.io.File&gt; fileChecker(org.hamcrest.io.FileMatchers.FileStatus, java.lang.String, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NonBlocking'/>
+    </item>
+</root>
