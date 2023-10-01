@@ -1,0 +1,39 @@
+{
+  "$id": "https://example.com/arrays.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": " yummy veggie :oP",
+  "type": "object",
+  "properties": {
+    "fruits": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "vegetables": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/veggie"
+      }
+    }
+  },
+  "$definitions": {
+    "veggie": {
+      "type": "object",
+      "required": [
+        "veggieName",
+        9.2
+      ],
+      "properties": {
+        "veggieName": {
+          "type": "string",
+          "description": " Veggie Description"
+        },
+        "alaVeggie": {
+          "type": "boolean",
+          "description": "veggie, as a Side?"
+        }
+      }
+    }
+  }
+}
