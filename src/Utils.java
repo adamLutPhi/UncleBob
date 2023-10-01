@@ -1,10 +1,12 @@
 //import DesignPatterns.Patterns;
 
 import DesignPatterns.E;
+import DesignPatterns.Patterns;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.lang.reflect.Field;
 import java.util.*;
 public class Utils {
 
@@ -115,11 +117,13 @@ public class Utils {
         }
     }
 
-   public static class Micra extends Nissan {
+
+   public static class Altima extends Nissan {
         public void tyre() {
             System.out.println("nm-ceat");
         }
     }
+
     /** the point: A Generic, and  non-optional element
      * (new idea)
      * **/
@@ -130,6 +134,44 @@ public class Utils {
         }
 
         return newList;
+    }
+
+    static Class<?> getFieldType(String @NotNull [] args, Integer id, String name ) throws ClassNotFoundException, NoSuchFieldException {
+        /** Arguments Off the Screen:
+         **/
+        //rule: for each exception, add it specific Exception
+        String TypeFormat = "";
+        Class<?> TypeClass =  new Patterns.getSpecificProducer(id, name).getClass();//.class;
+        try {
+            try {
+                try {
+                    Class<?> c = Class.forName(args[0]); //raises Exception: ClassNotFoundException
+                    Field f = c.getField(args[1]); //raises Exception: NoSuchFieldException
+
+                     TypeClass = f.getType(); //type
+
+                    // The `Type:` is a String (%s)[C-like] , plus a carriage-return (%n)
+                    TypeFormat = "Type: %s%n"; // One-liner format
+
+                    System.out.format(TypeFormat, f.getType());
+
+
+                    // production code should handle these exceptions more gracefully
+
+
+                } catch (ClassNotFoundException x) {
+                    x.printStackTrace();
+                } catch (NoSuchFieldException x) {
+                    x.printStackTrace();
+                }
+
+            } catch (RuntimeException e) {
+                throw new RuntimeException(e);
+            }
+            return TypeClass;
+        } finally {
+            System.out.println(TypeFormat+ TypeClass );
+        }
     }
     public List<int[]> getFlagged ;
 }
