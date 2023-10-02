@@ -5,6 +5,7 @@ package Example5;
  * <p>
  * 1. Name things
  * Do a lot of naming  (in-software)
+ * </p>
  * <p>
  * 2. names in :
  * 1. Files and
@@ -13,30 +14,37 @@ package Example5;
  * 3. Programs and
  * 4. Classes and
  * 5. Namespaces
+ * </p>
  * <p>
  * 6. variable
  * 7. Arguments
+ * </p>
  * <p>
  * Q. why be good with it?
- * A. Because we do so much of it
+ * A. Because we do so much of it!
+ * </p>
  * <p>
- * We probably ought to be good at it
+ * We probably ought to be good at it.
+ * </p>
+ *
+ *  <h3>4. A rule for the name </h3>
  * <p>
- * 4. rules for name
- * Derived from Tim Ottinger's list of naming rules
+ * Derived from `Tim Ottinger`'s list of naming rules
+ * </p>
  * <p>
  * Idea: to Reveal your Intent for naming the name.
+ * </p>
+ * <h3>Example:</h3>
  * <p>
- * Example:
- * <p>
- * couple of examples
+ * Couple of examples
+ * </p>
  **/
 public class Names {
 
     /**<h2>A bad choice of picking d </h2>
      *
      * <p> a name that requires a comment, does not reveal
-     * it's intent.
+     * its intent.
      *
      * The name of a variable should tell us
      * the significance of what that variable contains
@@ -55,22 +63,22 @@ public class Names {
      *  }
      *
      *     Now, consider this:
-     *     is probably no
+     *     it is probably a `no`
      *
      *     There does seem to be a letter variable
-     *     names like
+     *      (like names)
      *
      *
-     *    What is the rule for the length of a variable ?
+     *  Q.What is the rule for the length of a variable ?
      *
      *  A. variable: proportional to the size of the Scope
      *  i.e.
      *  Scope is the collection, which variables belong to
      *  each scope has its own variables
-     *  (maybe even a hashmap of <variables, values>)
+     *  (Maybe even a hashmap of <variables, values>)
      *
-     * (infer: It is a context-Driven programming:
-     * where the reuse of the same variable is possible,
+     * (infer: It is a Context-Driven programming:
+     * Where the reuse of the same variable is possible,
      * under different scopes )
      *
      *
@@ -79,34 +87,39 @@ public class Names {
      *  Scope2:
      *  name = "the sea"
      *
+     * (notice: how naming changed, radically?)
      * </p>
      *
      * <p>
-     *     It's the scope which is very small like one liner
-     *     - A single letter is fine.
+     *     It's the scope, which is very small like one liner
+     *     -" A single letter is fine."
      *
-     *   Else if it's a `Single One-line scope`
-     *   How about a : one line scope?
+     *   Else, if it's a `Single One-line scope`
+     *  </p>
+     *   <p>
+     *        How about a : one line scope?
+     *   </p>
      *
-     *   Letter is Great D
      *
-     *  See, it is depends
+     *   Letter is Great  (Depends)
      *
-     *  1.line-dependent:
+     *  See, it all depends on ()
+     *
+     *  1. Line-dependent:
      *
      *   d : a valid name for a date
-     *  (if d existed only if D existed only in a single line )
+     *  (If d existed, only if D existed, only on a single line )
      * ---
-     * Why:
+     * Q.Why:
      * ----
-     * You wouldn't lose the context
-     * You wouldn't need the name
-     * To remind you of anything
+     * -You wouldn't lose the `context`
+     * -You wouldn't need the name,
+     * --To remind you of anything!
      *
-     * The function call that generated the name would be enough
+     * -The function call: that generated the name, would be enough.
      *
      *  2. Scope-dependent:
-     *  Long scopes needs long names
+     *  "Long scopes needs long names"
      *
      *  Walk through the heirarchy here
      *
@@ -122,7 +135,7 @@ public class Names {
      *  that function is (4) lines long
      *</p>
      * <p>
-     * # variables
+     * # Variables
      * // The name of a variable should tell use the significance
      * of what that variable contains
      *
@@ -136,7 +149,7 @@ public class Names {
      *  Arguments would probably be a little bit longer
      *
      *  Word would probably be good,
-     *  For an argument
+     *  For an argument,
      *
      *   Instance variables, live inside the class
      *
@@ -146,37 +159,35 @@ public class Names {
      *
      * Two words:
      * Arguments to a member function
-     * - an a (1) word
+     * - An a (1) word
+
+     * Global functions:
      *
-     * Global functions
-     *
-     * Have a huge scope they'd better be very long
+     * Have a huge scope they'd better be very long,
      * Global Variables: have a huge scope
      *
      * So, they should probably be very long
-     * variables should have  a length
-     * proportional to the scope that contains them
+     * Variables should have  a length
+     * Proportional to the scope that contains them
      *
      * - Rule for Functions
-     * Exactly the opposite,
+     *   Exactly the opposite,
      *
-     * The bigger
-     *  The scope the smaller the name (for a function)
+     *  The Bigger the scope,
+     *  The smaller the name (for a function)
      *
      *  And for very obvious reasons
      *  We would not want to call the open  function
      *
      *  If the name of the Open function
-     *  was open file
-     *
+     *  Was open file
      *
      *
      * </p>
      * <p>
      *      <h2>2. Scope-dependent</h2>
-     there is an inverse relation shi[ between
-     variable length
-
+     There is an inverse relation shi[ between
+     variable lengths!
 
      1.As the scope of the variable gets larger
      Gets to shrink [why?]
@@ -184,25 +195,24 @@ public class Names {
 
      --It's a function, lives in a large scope
      -Imagine: It will be called from all over the place )
-     --(It will be called alot)
+     --(It will be called a lot)
      -(So,) we want to shrink the name down
-
 
      It must be Abstract
      Dealing with high-level abstraction
 
      2. Moreover,  As the scope (containing the function) decreases
-     since the methods of a class will probably
+     Since the methods of a class will probably
      Have slightly longer names
 
      Private functions called by public functions
-     will have longer names
+     Will have longer names
 
-     private functions called by private functions
-     will have longer names
+     Private functions called by private functions
+     Will have longer names
      i.e.
-     convertedJsonOfSchema
-     - feel free to continue down the hierarchy
+     ConvertedJsonOfSchema
+     - Feel free to continue down the hierarchy
 
      Extracting until you drop as you'll extract
      Extract and extract
@@ -215,7 +225,7 @@ public class Names {
 
      It does something really tiny
 
-     The name of a function is inversly proportional to the size of the scope
+     The name of a function is inversely proportional to the size of the scope
      (which it contains)
 
      Classes:
@@ -223,25 +233,25 @@ public class Names {
      (Changing the tool would matter (OOP or functional)
      Because the level of complexity is persistent
 
-     To recap, classess have (2) main scopes:
+     To recap: classes have (2) main scopes:
 
-     1.local scope
+     1.Local scope
      2.Global scope
 
-     have one word
+     Have one word
 
-     Golbal Scope : 1 word names
+     Global Scope : 1 word names
 
-     2.local scope
-     i.e. derived classes
-     Have multiple word names
-     Inner Classes
+     2.Local scope
+     i.e. for the derived classes
+     (Which) Have multiple word names
+     i.e. Inner Classes
 
      Rule:
-     As the scope shrinks , the name grows '
-     (that's how we control   name Length )
+     As the scope shrinks , the name grows'
+     (That's how we control the  `name Length` )
      *
-     * in this example
+     * In this example
      *
      * </p>
      *
@@ -250,9 +260,9 @@ public class Names {
 
     // Mediocre
     /**
-     * d: is not a bad name, as the scope that it was contained
-     * it was contained in was small if the scope
-     * if scope was long , then elaspesd time is perfectly reasonable
+     *<h4>d: Is not a bad name, as the scope that it was contained</h4>
+     * <h4> It was contained in was small if the scope
+     *      If scope was long , then elapsed time is perfectly reasonable</h4>
      **/
     int d; // elapsed time in days
 
@@ -272,3 +282,4 @@ public class Names {
 
 
 }
+
