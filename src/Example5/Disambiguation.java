@@ -34,7 +34,7 @@ public class Disambiguation {
     }
 
 
-    //avoid convinient misspellings
+    //avoid convenient misspellings
 /**
  public final void getClass(){ //cannot Override function needs to be final
  //avoid situations whre code will break, if a spelling error fixed.
